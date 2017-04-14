@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+
+void convert_number( float euros);
+
+int main(){
+
+
+float euros_user = 40;
+
+printf("please ente euros...\n");
+scanf("%f", &euros_user); 
+
+convert_number(euros_user);
+
+
+return 0;
+
+}
+
+void convert_number( float euros) {
+
+
+float usd = euros * 1.37;
+printf("%.2f Euros - %.2f USD\n", euros, usd);
+
+return;
+
+
+}
